@@ -1,0 +1,53 @@
+---
+title: "Lecture 10 - Joining multiple tables"
+author:
+output: 
+  html_document:
+    theme: cosmo
+    highlight: pygments
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(fontawesome)
+library(tidyverse)
+library(kableExtra)
+```
+
+# `r fa("youtube", fill = "steelblue")` Video
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/NZk7yAfj49k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/wReOH8OfYIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YoV-Sk5cIpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/bPXKXsiN_is" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+
+# `r fa("folder-open", fill = "steelblue")` Slide
+``` {r echo=FALSE}
+df_slide <- tribble(
+  ~text, ~chapter,
+  "6-1", "[Cartesian join](s6-1_cartesian.pdf){target=\"_blank\"}",
+  "6-2", "[Inner join 1](s6-2_equi.pdf){target=\"_blank\"}",
+  "6-3", "[Inner join 2](s6-3_nonequi.pdf){target=\"_blank\"}",
+  "6-4", "[Outer join](s6-4_outer.pdf){target=\"_blank\"}",
+)
+
+knitr::kable(df_slide, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+
+# `r fa("book", fill = "steelblue")` Reading
+``` {r echo=FALSE}
+df_reading <- tribble(
+  ~text, ~chapter,
+  "HVT", "Ch 7. Advanced SQL",
+  "JC", "Ch 9. Joining data from multiple tables",
+)
+
+knitr::kable(df_reading, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+

@@ -1,0 +1,49 @@
+---
+title: "Lecture 3 - Entity-Relatioship Diagram 2"
+author:
+output: 
+  html_document:
+    theme: cosmo
+    highlight: pygments
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(fontawesome)
+library(tidyverse)
+library(kableExtra)
+```
+
+# `r fa("youtube", fill = "steelblue")` Video
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/ZV0ewQW2_Nk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/PJUDtSEhqmI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/-LIqa6gC918" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+
+# `r fa("folder-open", fill = "steelblue")` Slide
+``` {r echo=FALSE}
+df_slide <- tribble(
+  ~text, ~chapter,
+  "2-5", "[Degree of relationship](s2-5_degrel.pdf){target=\"_blank\"}",
+  "2-6", "[Associative entity](s2-6_assoent.pdf){target=\"_blank\"}",
+  "2-9", "[Data modeling](s2-9_modeling.pdf){target=\"_blank\"}",
+)
+
+knitr::kable(df_slide, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+
+# `r fa("book", fill = "steelblue")` Reading
+``` {r echo=FALSE}
+df_reading <- tribble(
+  ~text, ~chapter,
+  "HVT", "Ch 2. Modeling data in the organization",
+)
+
+knitr::kable(df_reading, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+

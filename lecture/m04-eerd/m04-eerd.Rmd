@@ -1,0 +1,46 @@
+---
+title: "Lecture 4 - Enhanced ERD"
+author:
+output: 
+  html_document:
+    theme: cosmo
+    highlight: pygments
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(fontawesome)
+library(tidyverse)
+library(kableExtra)
+```
+
+# `r fa("youtube", fill = "steelblue")` Video
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/lywD0mFluvo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/_R0Fg3N0ee8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+
+# `r fa("folder-open", fill = "steelblue")` Slide
+``` {r echo=FALSE}
+df_slide <- tribble(
+  ~text, ~chapter,
+  "2-7", "[Enhanced ERD 1](s2-7_eerd1.pdf){target=\"_blank\"}",
+  "2-8", "[Enhanced ERD 2](s2-8_eerd2.pdf){target=\"_blank\"}",
+)
+
+knitr::kable(df_slide, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+
+# `r fa("book", fill = "steelblue")` Reading
+``` {r echo=FALSE}
+df_reading <- tribble(
+  ~text, ~chapter,
+  "HVT", "Ch 3. The enhanced E-R model",
+)
+
+knitr::kable(df_reading, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+

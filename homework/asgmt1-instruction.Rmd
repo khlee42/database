@@ -1,0 +1,50 @@
+---
+title: "Assignment 1 - Conceptual modeling"
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+In this assignment, you will draw two ER diagrams (ERD) for the requirements described in the problem statements below. 
+Problem Statement 2 is built upon Problem Statement 1, so you first need to complete Statement 1 and update that to reflect the changes made in Statement 2.
+To draw ER diagrams, you **must** use a drawing software tool. A hand-drawn won't be accepted. Software such as Draw.io, Microsoft Visio, etc. provides tools for drawing ERDs and the option to export diagrams as PDF files. See ERD Drawing Tools for more.
+Also, you **must** use a proper ERD notation covered in the lectures. 
+
+# Submission guidelines
+
+- Deliverables: two pdf files, one for each question
+  - asgmt1_q1_lastname_firstname.pdf (e.g., asgmt1_q1_lee_kyunghee.pdf)
+  - asgmt1_q2_lastname_firstname.pdf (e.g., asgmt1_q2_lee_kyunghee.pdf)
+- Upload the PDF files to Assignment 1 on Canvas.
+- A late submission will result in 5% point reduction per day, and any submission over five days late will not be accepted. See course policy for details.
+ 
+# Problem Statement 1
+
+An online music retail platform, S record, is planning to implement a database to enhance its data management practice and ultimately advance its business operations. The initial planning analysis phases have revealed the following system requirements:
+
+Each album has a unique Album ID as well as the following attributes: Album Title, Album Price, and Release Date. An album contains at least one song or more songs. 
+Each song, identified by Song ID, can be contained in more than one album or not contained in any of them at all. Songs have Song Title and Play Time attributes. Also, each song belongs to at least one genre or multiple genres. 
+A song is written by at least one artist or by multiple artists. Each artist has a unique Artist ID. All artists included in the database must have written at least one song or multiple songs. Artists have Artist Name and Debut Date attributes.
+
+Each customer must sign up as a member to make a purchase on the platform. The customer membership information includes Customer ID, Customer Name, Address (consisting of City, State, Postal Code), Phone Number, Birthday, Registration Date. Customers place orders to purchase at least one album or more albums. They can purchase multiple quantities of the same album, which is recorded as Quantities Ordered. Each order is identified by an Order ID and has Order Date, Total Price, Payment Method, and Delivery Option.
+
+**Q1. Draw an ER diagram for Statement 1. If necessary, add notes to your diagram to explain additional assumptions you made. Save your diagram as `asgmt1_q1_lastname_firstname.pdf`**
+
+# Problem Statement 2
+
+To capture growing online demands, S record has decided to expand its retail business to a music streaming service. 
+Using the streaming service, customers now can listen to individual songs they like, instead of purchasing the whole album.
+
+Customers now can choose either to buy a physical album(s) (physical order) or subscribe to a plan which grants unlimited access to all songs (digital order). 
+Every order is either a physical order or digital order, and cannot be both. 
+Both types of order share most of the order attributes, except that physical orders have Delivery Option while digital orders have Subscription Option. 
+For digital order, it is important to track play history. That is, the company should be able to track how many times song A has been played (play count) on date B (play date) under order C (digital order).
+
+**Q2. Update your ER diagram from Q1 to reflect the new features in Statement 2. If necessary, add notes to your diagram to explain additional assumptions you made. Save your diagram as `asgmt1_q2_lastname_firstname.pdf`**

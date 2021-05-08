@@ -1,0 +1,52 @@
+---
+title: "Lecture 5 - Relational model"
+author:
+output: 
+  html_document:
+    theme: cosmo
+    highlight: pygments
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(fontawesome)
+library(tidyverse)
+library(kableExtra)
+```
+
+# `r fa("youtube", fill = "steelblue")` Video
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/37LNGsW_0V8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/YFzCBsjOFqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/IrG1NuzdeTA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/5Uf1o2WNKn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+
+# `r fa("folder-open", fill = "steelblue")` Slide
+``` {r echo=FALSE}
+df_slide <- tribble(
+  ~text, ~chapter,
+  "3-1", "[Relational model](s3-1_relation.pdf){target=\"_blank\"}",
+  "3-2", "[Transforming ERD to relational model 1](s3-2_mapping1.pdf){target=\"_blank\"}",
+  "3-3", "[Transforming ERD to relational model 2](s3-3_mapping2.pdf){target=\"_blank\"}",
+  "3-4", "[Integrity constraints](s3-4_integrity.pdf){target=\"_blank\"}",
+)
+
+knitr::kable(df_slide, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+
+# `r fa("book", fill = "steelblue")` Reading
+``` {r echo=FALSE}
+df_reading <- tribble(
+  ~text, ~chapter,
+  "HVT", "Ch 4. Logical database design and the relational model",
+)
+
+knitr::kable(df_reading, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+

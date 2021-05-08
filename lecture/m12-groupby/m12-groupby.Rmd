@@ -1,0 +1,54 @@
+---
+title: "Lecture 12 - Group data"
+author:
+output: 
+  html_document:
+    theme: cosmo
+    highlight: pygments
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(fontawesome)
+library(tidyverse)
+library(kableExtra)
+```
+
+# `r fa("youtube", fill = "steelblue")` Video
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/qLTegmGkBDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/T0NLb984fOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/0Kh6yYQl6VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/BF3fuCv1dX4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<br>
+
+# `r fa("folder-open", fill = "steelblue")` Slide
+``` {r echo=FALSE}
+df_slide <- tribble(
+  ~text, ~chapter,
+  "6-5", "[Single-row functions](s6-5_singlefunc.pdf){target=\"_blank\"}",
+  "6-6", "[Group functions](s6-6_groupfunc.pdf){target=\"_blank\"}",
+  "6-7", "[Grouping data 1](s6-7_groupby.pdf){target=\"_blank\"}",
+  "6-8", "[Grouping data 2](s6-8_having.pdf){target=\"_blank\"}",
+)
+
+knitr::kable(df_slide, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+
+# `r fa("book", fill = "steelblue")` Reading
+``` {r echo=FALSE}
+df_reading <- tribble(
+  ~text, ~chapter,
+  "HVT", "Ch 6. Introduction to SQL",
+  "JC", "Ch 10. Selected single-row functions",
+  "JC", "Ch 11. Group functions",
+)
+
+knitr::kable(df_reading, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+

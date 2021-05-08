@@ -1,0 +1,33 @@
+---
+title: "Final exam instructions"
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+# Before you start:
+
+- Date: next weekend (9:00 AM `r due_ex$release[4]` ~ 11:59 PM `r due_ex$due[4]`)
+- Time: you can take any two-hour window during that period
+- Topics to cover: all modules from the beginning
+- Total 25 questions, one point per each
+- Format: Two-part multiple choice questions (20):
+  - Part 1 (10): Simple questions to test your R knowledge. No need for using the R console.
+  - Part 2 (15): Questions that require to write code for answering. You may use the R console to test your code before submitting your answer.
+- **Lockdown browser & Webcam required** (See [the setup instructions](../../lockdown_browser.html){target="_blank"})
+- Try [the mock exam](update the link){target="_blank"} to get yourself familiar with the exam setup.
+- **Please make sure that the exam runs on your computer without any issues - and let me know if you have one ASAP. No exception will be made on the basis of technical issues that could have been averted if checked beforehand** 
+
+# How to use R console:
+
+- This console is provided only for the testing purpose. You can write and test your code before submitting your answer, but what you enter into the console won't be recorded nor submitted.
+- **You must submit your answer to the below questions on Canvas.**
+- You can navigate through the "previous topic" and "next topic" buttons on the bottom, or the question list on the left.
+- Click the title if you don't see the question list.

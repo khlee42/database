@@ -1,0 +1,133 @@
+---
+title: "Assignment 2 - Loading Data into Database"
+output: 
+  html_document: 
+    theme: cosmo
+    toc: TRUE
+    toc_float: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+In this assignment, you will write a SQL script to create and populate the SRECORD database from Assignment 1. The table definition below provides relevant information for the provision.
+
+This assignment is two-part: 1) creating tables on your Oracle database and 2) inserting records into those tables.
+
+- The first part is to use DDL (CREATE) and create all tables, columns, and constraints as specified in the table definition. The name, data type, and length of the columns MUST follow the definitions provided.
+- For the second part, use DML (INSERT) to populate the tables you've created. 
+  - You can add as many records (or rows) as you want. The minimum requirements: your database must have at least 3 albums, 20 songs, 5 customers, and 10 orders.
+  - It would be easier to populate the main tables first–-CUSTOMER, ORDER_RECORD, SONG, ARTIST, GENRE, and ALBUM--and 
+  move onto the matching (or associative) tables–-WRITES, BELONGS_TO, CONTAINS, PLAY_HISTORY, and ORDER_LINE. 
+  - Keep in mind that the referential integrity constraint (or foreign key constraint) requires any records to which a table is referring must be present in the reference table. For example, for WRITES to have a record (artist B wrote song A), song A must be in SONG and artist B must be in ARTIST. Otherwise, this record (song A, artist B) in WRITES would be referring to something that does not exist in the database (which violates the foreign key constraint).
+
+# Submission guidelines
+
+- Deliverable: A script file (.sql) that contains all the SQL commands needed to generate the tables, columns, constraints, and records as the requirements
+  - To save a script from SQL Developer Web, click 'Download Editor Content' button on the toolbar on the top
+- Before submitting, run your script on your machine and make sure it runs without errors
+  - To get the full score, your script must create the database as required with no error. If your code fails to run, partial credits will be given.
+- File name: asgmt2_lastname_firstname.sql (e.g., asgmt2_ lee_kyunghee.sql)
+- File extension: .sql
+- Upload the sql file to Canvas
+- A late submission will result in 5% point reduction per day, and any submission over five days late will not be accepted. See course policy for details.
+
+# Table description
+``` {r echo=FALSE}
+df_reading <- tribble(
+  ~table, ~column, ~type, ~length, ~constraint,
+  "CUSTOMER", "CustomerID", "NUMBER", "6", "Primary key",
+  "CUSTOMER", "CustomerName", "VARCHAR2", "20", "",
+  "CUSTOMER", "City", "VARCHAR2", "20", "",
+  "CUSTOMER", "State", "CHAR", "2", "",
+  "CUSTOMER", "PostalCode", "CHAR", "5", "",
+  "CUSTOMER", "PhoneNumber", "CHAR", "10", "",
+  "CUSTOMER", "Birthday", "DATE", "", "",
+  "CUSTOMER", "RegistrationDate", "DATE", "", "",
+  "ORDER_RECORD", "OrderID", "NUMBER", "10", "Primary key",
+  "ORDER_RECORD", "OrderDate", "DATE", "", "",
+  "ORDER_RECORD", "PaymentMethod", "CHAR", "2", "CS(Cash), CC(Credit Card), or PP(Paypal)",
+  "ORDER_RECORD", "OrderType", "CHAR", "1", "P(Physical order), D(Digital order)",
+  "ORDER_RECORD", "CustomerID", "NUMBER", "6", "Foreign key",
+  "DIGITAL_ORDER", "DOrderID", "NUMBER", "10", "Primary key; Foreign key",
+  "DIGITAL_ORDER", "SubscriptionOption", "CHAR", "1", "M(Monthly) or Y(Yearly)",
+  "PHYSICAL_ORDER", "POrderID", "NUMBER", "10", "Primary key; Foreign key",
+  "PHYSICAL_ORDER", "DeliveryOption", "CHAR", "1", "F(Free), S(Standard), or E(Expedite)",
+  "PLAY_HISTORY", "DOrderID", "NUMBER", "10", "Primary key; Foreign key",
+  "PLAY_HISTORY", "SongID", "NUMBER", "10", "Primary key; Foreign key",
+  "PLAY_HISTORY", "PlayDate", "DATE", "", "",
+  "PLAY_HISTORY", "PlayCount", "NUMBER", "3", "",
+  "ORDER_LINE", "POrderID", "NUMBER", "10", "Primary key; Foreign key",
+  "ORDER_LINE", "AlbumID", "NUMBER", "10", "Primary key; Foreign key",
+  "ORDER_LINE", "QuantitiesOrdered", "NUMBER", "3", "",
+  "SONG", "SongID", "NUMBER", "10", "Primary key",
+  "SONG", "SongTitle", "VARCHAR2", "50", "",
+  "SONG", "PlayTime", "NUMBER", "3", "",
+  "ALBUM", "AlbumID", "NUMBER", "10", "Primary key",
+  "ALBUM", "AlbumTitle", "VARCHAR2", "50", "",
+  "ALBUM", "AlbumPrice", "NUMBER", "3", "",
+  "ALBUM", "ReleaseDate", "DATE", "", "",
+  "ARTIST", "ArtistID", "NUMBER", "10", "Primary key",
+  "ARTIST", "ArtistName", "VARCHAR2", "20", "",
+  "ARTIST", "DebutDate", "DATE", "", "",
+  "GENRE", "GenreID", "NUMBER", "4", "Primary key",
+  "GENRE", "GenreName", "VARCHAR2", "50", "",
+  "CONTAINS", "SongID", "NUMBER", "10", "Primary key; Foreign key",
+  "CONTAINS", "AlbumID", "NUMBER", "10", "Primary key; Foreign key",
+
+  "WRITES", "ArtistID", "NUMBER", "10", "Primary key; Foreign key",
+  "WRITES", "SongID", "NUMBER", "10", "Primary key; Foreign key",
+  "BELONGSTO", "SongID", "NUMBER", "10", "Primary key; Foreign key",
+  "BELONGSTO", "GenreID", "NUMBER", "4", "Primary key; Foreign key",
+
+)
+
+knitr::kable(df_reading, escape = F) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+
+# Example code
+To create the CUSTOMER table:
+```{r eval=FALSE}
+CREATE TABLE CUSTOMER
+
+(CustomerID  NUMBER(6),
+
+CustomerName VARCHAR2(20),
+
+City VARCHAR2(20),
+
+State VARCHAR2(2),
+
+PostalCode VARCHAR2(5),
+
+PhoneNumber VARCHAR2(10),
+
+Birthday DATE,
+
+RegistrationDate DATE,
+
+     CONSTRAINT customer_customerid_pk PRIMARY KEY (CustomerID)
+
+);
+```
+
+To insert new records into the CUSTOMER table:
+```{r eval=FALSE}
+INSERT INTO CUSTOMER
+
+VALUES (991001, 'MORALES BONITA', 'EASTPOINT', 'FL', '32328', '3132223333', '02-APR-70', '01-SEP-10');
+
+INSERT INTO CUSTOMER
+
+VALUES (991002, 'THOMPSON RYAN', 'SANTA MONICA', 'CA', '90404', '5482222678', '28-FEB-80', '01-SEP-15');
+```
+
+To see the records:
+```{r eval=FALSE}
+SELECT * FROM CUSTOMER;
+```

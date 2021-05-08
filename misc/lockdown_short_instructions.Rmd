@@ -1,0 +1,23 @@
+---
+title: ""
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+## Lockdown browser + Webcam instruction
+  - You must stay on camera for the entire exam.
+  - Please dress appropriately, as though you are taking the exam in class.
+  - You should not be laying on a bed / should be sitting at a desk/table as you would in a classroom.
+  - The camera must not be covered at any time nor may the microphone be muted.
+  - The camera must be pointing at your face all the time and not be tilted to any other direction.
+  - It is your responsibility to ensure that the computer you are working on is configured properly. Complete the system check prior to taking the midterm exam.
+  - Failure to comply with the environment scan instructions will result in an invalidation of your exam score. 
+  - Grades will be muted until after I review all of the Respondus exam videos. Please refer to the student code of conduct as well as our syllabus where behavior that constitutes cheating is described.

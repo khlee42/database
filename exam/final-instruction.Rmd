@@ -1,0 +1,38 @@
+---
+title: "Final exam instructions"
+output: 
+  html_document: 
+    theme: cosmo
+    includes:
+      after_body: ../misc/lockdown_short_instructions.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+## Logistics
+- Exam schedule: 9:00 AM on 5/1 - 11:59 PM on 5/2
+- Time limit: 2 hours. You can take any 2-hour window during that period.
+- You must start before 9:59 pm on 11/15 to use the full 2 hours.
+  - After 9:59 pm, you can still take the exam, but the time allowed you will be less than 2 hours.
+  - After 11:59 pm, you won't be able to make any attempt.
+- A session will be automatically saved and terminated upon the time limit. Once you start, the timer won't stop even if you leave the exam page.
+- Closed-book exam. No crib sheet allowed.
+
+## Two-part exams
+- Multiple choice questions: 22 questions * 2 points = 44 points
+- SQL questions: 7 questions, 56 points
+  - Similar to Assignment 3 and the mock exam
+  - An ERD and table definition will be provided. 
+  - Your queries must follow the Oracle SQL syntax. Partial credit will be given based on your answer if it fails to run.
+  - **Have your SDW credentials ready as you will be using Lockdown Browser**
+    - To access your SDW, click your WSU ID from the list on the next page
+  - **Data schema: finalexam**
+    - To view the schema and its tables, click the box with your WSU ID on it, and search for "finalexam" 
+    - To select a table from the schema, you must put "finalexam." in front of the name of the table to which you're referring. E.g., select * from finalexam.aliases (not select * from aliases)
+  - **Write one SELECT query per question**
+    - Test your query on SDW, and copy and paste it onto Canvas

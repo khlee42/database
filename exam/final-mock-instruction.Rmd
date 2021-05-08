@@ -1,0 +1,31 @@
+---
+title: "Mock exam for the final"
+output: 
+  html_document: 
+    theme: cosmo
+    includes:
+      after_body: ../misc/lockdown_short_instructions.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+This is a mock exam for the final exam. It won’t be graded, and you can try it as many times as you want. Use it to make sure you have no issues taking the exam on your machine.
+
+For this exam as well as the final, you will have access to your SDW. Use it to test your queries before submitting them. When starting the exam, you will see a list of WSU IDs. Click your WSU ID to log in to your SDW, with your credentials provided. 
+
+- Total 14 questions
+- **Have your SDW credentials ready as you will be using Lockdown Browser**
+-   To access your SDW, click your WSU ID from the list on the next page
+- **Data schema: cityjail**
+  - To view the schema and its tables, click the box with your WSU ID on it, and search for "cityjail" 
+  - To select a table from the schema, you must put "cityjail." in front of the name of the table to which you're referring. E.g., select * from cityjail.aliases (not select * from aliases)
+- **Write one SELECT query per question**
+  - Test your query on SDW, and copy and paste it onto Canvas
+
+The final exam will be similar to this format - you will have access to your SDW and a new dataset. Plus, there will be multiple-choice questions like the midterm exam. Finally, the mock exam is by design much harder than the final exam, for the purpose of getting you prepared for the real one, so don't let it get to you!
+

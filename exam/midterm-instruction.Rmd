@@ -1,0 +1,25 @@
+---
+title: "Midterm exam instructions"
+output: 
+  html_document: 
+    theme: cosmo
+    includes:
+      after_body: ../misc/lockdown_short_instructions.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+- Exam schedule: 9:00 AM on 3/6 - 11:59 PM on 3/7
+- Time limit: 90 minutes. You can take any 90-minute window during that period.
+- One attempt
+- You must start before 10:29 pm to use the full 90 minutes.
+  - After 10:29 pm, you can still take the exam, but the time allowed to you will be less than 90 minutes.
+  - After 11:59 pm, you won't be able to make any attempt.
+- A session will be automatically saved and terminated upon the time limit. Once you start, the timer won't stop even if you leave the exam page.
+- Closed-book exam. No crib sheet allowed.
+- 25 Multiple choice questions. 4 points per each question.

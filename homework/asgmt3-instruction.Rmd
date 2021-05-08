@@ -1,0 +1,47 @@
+---
+title: "Assignment 3 - Data extraction"
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+In this assignment, you will write SELECT queries to extract data records from the SRECORD database from Assignment 2.
+
+You now have access to this schema. On the SQL Developer Web, search the navigational panel for SRECORD.
+
+- To search for a schema: on the navigation pane, click the box on which your WSU ID, and enter the name of the schema to search, which in this case "SRECORD"
+- To access tables on the schema: put the schema name and dot (.) in front of the name of the table from which to extract data; e.g., to select the ALBUM table in the SRECORD schema, you must enter `SELECT * FROM SRECORD.ALBUM;` not `SELECT * FROM ALBUM;`
+
+# Submission guidelines
+
+- Deliverable: submit your query for each question
+  - one query per question
+  - Submit queries only. **Do not include any narratives nor outputs.**
+- Resubmit as many times as you want. The assignment will remain open until the due date.
+- Your queries must use the SRECORD schema. 
+- A late submission will result in 5% point reduction per day, and any submission over five days late will not be accepted. See course policy for details.
+
+# Problems
+
+Using the SRECORD schema, write SELECT queries to answer the following questions:
+
+1. List the name of all artists.
+2. Get the ID and title of albums whose price is above 5 dollars.
+3. List the ID and name of customers living in Michigan.
+4. List the ID and date of orders made by Cash.
+5. Get the ID, date, and subscription option of all digital orders.
+6. Get all customer information (*) for those who purchased the annual subscription.
+7. Which state do customers live who chose the expedite delivery? (Suppress duplicates)
+8. Which song was played the most? List songs with song titles, artist names, and play counts in descending order of the play count
+9. Which album was sold the most? List albums with album titles, release dates, and quantities ordered in descending order of the quantities ordered.
+10. Who is the most played artist? List artist names and play count of songs written by the artists in descending order of the play count.
+11. What are the average prices of albums delivered by Free, Standard, and Expedite shipping?
+ 
+

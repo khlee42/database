@@ -1,0 +1,26 @@
+---
+title: ""
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+<br>
+<br>
+
+In the SQL exercises, you will be given a data set and asked to write SQL queries to answer questions about the data. You can access SQL Developer Web to write and test your queries. Once satisfied, enter your query to the quiz.
+
+- **One attempt**
+- **Submit the query only. Do not include any narratives nor outputs.**
+- Access to SDW through your credentials and URL provided by email.
+- Schema: JUSTLEE
+  - Put schema name and dot before table name to refer to tables in the schema; e.g., `select * from justlee.customers;`
+- 5 questions in total
+- Time limit: 60 minutes

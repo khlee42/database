@@ -1,0 +1,21 @@
+---
+title: ""
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+<br>
+<br>
+
+- Multiple choice question
+- 15 questions in total
+- You can make up to three attempts
+- Time limit: 40 minutes
