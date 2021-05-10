@@ -1,0 +1,41 @@
+---
+title: "SDW Tutorial 1"
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+
+# Access SQL Developer Web (SDW)
+
+To access the Oracle server that hosts your database, we are going to use a client program called "SQL Developer Web." This program is web-based, so you don't need to install anything but simply enter the URL and log in.
+
+**1. Each user has a different URL to SQL Developer Web:**
+
+The below URL that is replaced with your WSU ID will be your unique URL.
+
+`https://wq1mqvljkclf5te-db202003171615.adb.us-ashburn-1.oraclecloudapps.com/ords/your_WSU_ID/_sdw/?nav=worksheet`
+
+e.g., if your WSU ID is ab1234, then the access URL will be
+
+`https://wq1mqvljkclf5te-db202003171615.adb.us-ashburn-1.oraclecloudapps.com/ords/ab1234/_sdw/?nav=worksheet`
+
+**2. Enter Username and Password:**
+
+Username: your WSU ID
+Password: sent to your email.
+
+You will receive an email from me that contains your log-in credentials and unique access URL.
+
+# Sign In and Workspace Tour
+
+<br>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/vQQbl1GziKI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  

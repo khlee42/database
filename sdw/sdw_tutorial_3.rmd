@@ -1,0 +1,17 @@
+---
+title: "SDW Tutorial 3"
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+# Select Rows From Tables
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/0B3JbdNd3MQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
