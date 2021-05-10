@@ -1,0 +1,17 @@
+---
+title: "Assignment 1 - Answer Key"
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("asgmt1_answer.png")
+```
