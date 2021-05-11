@@ -18,6 +18,18 @@ library(kableExtra)
 ```{r global, echo=FALSE}
 ```
 
+This is an introductory database course, presuming no prior exposure to database or SQL programming. Student will learn essential knowledge and skills for database management, including database management system (DBMS), database architecture, data design using entity‐relationship (ER) modeling, SQL language, and database administration. 
+Focusing on Oracle relational DBMS, this course makes an extensive use of hands-on exercises. **The access to a laptop/desktop is required in this course.**
+
+```{r ddd, echo=FALSE}
+icon <- paste0("<a href=\"", "kyunghee.lee@wayne.edu", "\">", as.character(fa(name = "envelope", fill = "steelblue")), "</a>")
+df <- tibble(
+  c('Instructor', 'Office', 'Format'),
+  c(paste0('Kyunghee Lee ', icon), 437, 'Online')
+)
+knitr::kable(df, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped")
+```
 
 ## Course Objectives
 Upon completion of this course, the student should have acquired the core knowledge and skills to be able to:
