@@ -1,8 +1,11 @@
 ---
-title: "Policies"
-output:
+title: "ISM5992 - Database Systems"
+output: 
+  # pdf_document
   html_document:
     theme: cosmo
+    # includes:
+    #   after_body: schedule.html
 ---
 
 ```{r setup, include=FALSE}
@@ -16,21 +19,22 @@ library(kableExtra)
 ```{r global, echo=FALSE}
 ```
 
+-------------  ------------------------ 
+Instructor     Kyunghee Lee
+
+email	         kyunghee.lee@wayne.edu
+
+Office         437
+
+Format         Online
+---------------------------------------
+
 This is an introductory database course, presuming no prior exposure to database or SQL programming. Student will learn essential knowledge and skills for database management, including database management system (DBMS), database architecture, data design using entity‐relationship (ER) modeling, SQL language, and database administration. 
 Focusing on Oracle relational DBMS, this course makes an extensive use of hands-on exercises. **The access to a laptop/desktop is required in this course.**
 
-```{r ddd, echo=FALSE}
-icon <- paste0("<a href=\"", "kyunghee.lee@wayne.edu", "\">", as.character(fa(name = "envelope", fill = "steelblue")), "</a>")
-df <- tibble(
-  c('Instructor', 'Office', 'Format'),
-  c(paste0('Kyunghee Lee ', icon), 437, 'Online')
-)
-knitr::kable(df, escape = F, col.names=NULL) %>%
-  kable_styling(bootstrap_options = "striped")
-```
-
 ## Course Objectives
 Upon completion of this course, the student should have acquired the core knowledge and skills to be able to:
+
 - Understand the basic concepts of data storage, retrieval, and transformation
 - Develop conceptual data models of database (entity-relationship diagrams) based on system requirements
 - Develop logical data models from given conceptual data models
@@ -44,8 +48,9 @@ Upon completion of this course, the student should have acquired the core knowle
 
 ## COURSE MATERIALS
 #### Canvas
-All materials, quizzes, assignments, and announcements will be distributed through the course page on Canvas.
-Video lecture and slide
+All materials, quizzes, assignments, and announcements will be distributed through the course page on Canvas. **The course page is optimized for Chrome and may not work properly on other web browsers**
+
+#### Video lecture and slide
 Video lectures and slides will be uploaded weekly on the Canvas course page, along with quizzes and assignments. Refer to the class schedule for details. 
 
 #### Textbook 
