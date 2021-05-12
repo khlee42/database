@@ -3,8 +3,6 @@ title: "Policies"
 output:
   html_document:
     theme: cosmo
-    toc: yes
-    toc_float: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -53,7 +51,7 @@ Video lectures and slides will be uploaded weekly on the Canvas course page, alo
 #### Textbook 
 - [HVT] Hoffer, Venkataraman, and Topi. Modern Database Management, 12th Edition, Pearson Prentice Hall (the prior versions – 10 or 11th ed. – are compatible).
 - [JC] Casteel, Oracle 12c: SQL, 3rd Edition, Cengage Learning
-- This textbook covers the topics for the exams Oracle Database Foundations 1Z0-006 and Oracle Database SQL 1Z0-071, which are the requirement for Oracle Database Foundations Certified Junior Associate and Oracle Database SQL Certified Associate, respectively.
+  - This textbook covers the topics for the exams Oracle Database Foundations 1Z0-006 and Oracle Database SQL 1Z0-071, which are the requirement for Oracle Database Foundations Certified Junior Associate and Oracle Database SQL Certified Associate, respectively.
 
 #### Software/Database platform
 - Oracle Cloud database (instructions provided on the Canvas course page)
