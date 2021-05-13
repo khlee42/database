@@ -1,11 +1,9 @@
 ---
 title: "ISM5992 - Database Systems"
 output: 
-  # pdf_document
   html_document:
     theme: cosmo
-    # includes:
-    #   after_body: schedule.html
+always_allow_html: true
 ---
 
 ```{r setup, include=FALSE}
@@ -19,15 +17,17 @@ library(kableExtra)
 ```{r global, echo=FALSE}
 ```
 
--------------  ------------------------ 
-Instructor     Kyunghee Lee
 
-email	         kyunghee.lee@wayne.edu
+```{r, echo=FALSE}
+icon <- paste0("<a href=\"", "kyunghee.lee@wayne.edu", "\">", as.character(fa(name = "envelope", fill = "steelblue")), "</a>")
+df <- tibble(
+  c('Instructor', 'Email', 'Office', 'Format'),
+  c(paste0('Kyunghee Lee ', icon), 'kyunghee.lee@wayne.edu', 437, 'Online')
+)
+knitr::kable(df, escape = F, col.names=NULL) %>%
+  kable_styling(bootstrap_options = "striped",  font_size = 16)
+```
 
-Office         437
-
-Format         Online
----------------------------------------
 
 This is an introductory database course, presuming no prior exposure to database or SQL programming. Student will learn essential knowledge and skills for database management, including database management system (DBMS), database architecture, data design using entity‐relationship (ER) modeling, SQL language, and database administration. 
 Focusing on Oracle relational DBMS, this course makes an extensive use of hands-on exercises. **The access to a laptop/desktop is required in this course.**
@@ -46,7 +46,7 @@ Upon completion of this course, the student should have acquired the core knowle
 - Join multiple tables to retrieve data from the combined table
 
 
-## COURSE MATERIALS
+## Course Materials
 #### Canvas
 All materials, quizzes, assignments, and announcements will be distributed through the course page on Canvas. **The course page is optimized for Chrome and may not work properly on other web browsers**
 
@@ -174,3 +174,15 @@ For more information of academic integrity, see the following book:
 ## Student Disabilities Services
 If you have a documented disability that requires accommodations, you will need to register with Student Disability Services for coordination of your academic accommodations. The Student Disability Services (SDS) office is located at 1600 David Adamany Undergraduate Library in the Student Academic Success Services department. The SDS telephone number is 313-577-1851 or 313-202-4216 for videophone use. Once you have your accommodations in place, I will be glad to meet with you privately during my office hours to discuss your special needs. Student Disability Services’ mission is to assist the university in creating an accessible community where students with disabilities have an equal opportunity to fully participate in their educational experience at Wayne State University. You can learn more about the disability office at www.studentdisability.wayne.edu
 To register with Student Disability Services, complete the online registration form at:  https://wayne-accommodate.symplicity.com/public_accommodation/
+
+
+## Schedule
+
+```{r echo=FALSE, message=FALSE}
+df <- read_csv("schedule.csv")
+
+knitr::kable(df[, 2], escape = F) %>%
+  kable_styling(bootstrap_options = "striped", font_size = 16) %>% 
+  pack_rows(index = table(df$Date))
+
+```
