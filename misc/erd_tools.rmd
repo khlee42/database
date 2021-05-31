@@ -20,7 +20,12 @@ To draw ERD, you may want to consider online drawing software like
 Both provide ERD notations. The interfaces are very intuitive, so you won't need any practice for using these tools. Simply drag and drop entity notations, and draw lines among those entities. You can find ERD notations under the name "Entity Relation(ship)" on the left pane.
 Draw.io offers complete access for free. Lucid Chart on the other hand offers a limited free-tier version, but you can create a free education account with your WSU ID if you want to try this software.
 
-Check out the links below for more information.
+Draw.io tutorial:
 
-- ERD tutorial in Draw.io - https://about.draw.io/entity-relationship-diagram-erd/
+- ERD using Draw.io 1 - https://about.draw.io/entity-relationship-diagram-erd/
+- ERD using Draw.io 2 - https://drawio-app.com/entity-relationship-diagrams-with-draw-io/
+- Creating Entity Relationship Diagrams using Draw.io - https://www.youtube.com/watch?v=lAtCySGDD48
+
+Lucid Chart tutorial:
+
 - ERD tutorial in LucidChart - https://www.lucidchart.com/pages/how-to-draw-ERD

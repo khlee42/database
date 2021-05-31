@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 In this assignment, you will draw two ER diagrams (ERD) for the requirements described in the problem statements below. 
 Problem Statement 2 is built upon Problem Statement 1, so you first need to complete Statement 1 and update that to reflect the changes made in Statement 2.
 To draw ER diagrams, you **must** use a drawing software tool. A hand-drawn won't be accepted. Software such as Draw.io, Microsoft Visio, etc. provides tools for drawing ERDs and the option to export diagrams as PDF files. See [ERD Drawing Tools for more](https://khlee42.github.io/database/misc/erd_tools.html){target="_blank"}
-Also, you **must** use a proper ERD notation covered in the lectures. 
+Also, you **must** use the crow's foot ERD notation covered in the lectures. See [ERD Notations in Data Modeling](https://vertabelo.com/blog/comparison-of-erd-notations/) for differences among the notations. 
 
 # Submission guidelines
 
