@@ -15,9 +15,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Logistics
-- Exam schedule: 9:00 AM on 5/1 - 11:59 PM on 5/2
+- Exam schedule: 9:00 AM on 6/28 - 11:59 PM on 6/29
 - Time limit: 2 hours. You can take any 2-hour window during that period.
-- You must start before 9:59 pm on 11/15 to use the full 2 hours.
+- You must start before 9:59 pm to use the full 2 hours.
   - After 9:59 pm, you can still take the exam, but the time allowed you will be less than 2 hours.
   - After 11:59 pm, you won't be able to make any attempt.
 - A session will be automatically saved and terminated upon the time limit. Once you start, the timer won't stop even if you leave the exam page.
