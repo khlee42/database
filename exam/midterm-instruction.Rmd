@@ -14,7 +14,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r global, echo=FALSE}
 ```
 
-- Exam schedule: 9:00 AM on 3/6 - 11:59 PM on 3/7
 - Time limit: 90 minutes. You can take any 90-minute window during that period.
 - One attempt
 - You must start before 10:29 pm to use the full 90 minutes.

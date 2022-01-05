@@ -1,0 +1,198 @@
+---
+title: "ISM7510 - Database Management"
+output: 
+  html_document:
+    theme: cosmo
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(fontawesome)
+# library(kableExtra)
+# knitr::read_chunk('global.R')
+```
+
+```{r global, echo=FALSE}
+```
+
+
+```{r, echo=FALSE}
+icon <- paste0("<a href=\"", "kyunghee.lee@wayne.edu", "\">", as.character(fa(name = "envelope", fill = "steelblue")), "</a>")
+df <- tibble(
+  c('Instructor', 'Email', 'Office', 'Format'),
+  c(paste0('Kyunghee Lee ', icon), 'kyunghee.lee@wayne.edu', 437, 'Online')
+)
+# knitr::kable(df, escape = F, col.names=NULL) %>%
+#   kable_styling(bootstrap_options = "striped",  font_size = 16)
+knitr::kable(df, escape = F, col.names=NULL)
+```
+
+
+This is an introductory database course, presuming no prior exposure to database or SQL programming. Student will learn essential knowledge and skills for database management, including database management system (DBMS), database architecture, data design using entity‐relationship (ER) modeling, SQL language, and database administration. 
+Focusing on Oracle relational DBMS, this course makes an extensive use of hands-on exercises. **The access to a laptop/desktop is required in this course.**
+
+## Course Objectives
+Upon completion of this course, the student should have acquired the core knowledge and skills to be able to:
+
+- Understand the basic concepts of data storage, retrieval, and transformation
+- Develop conceptual data models of database (entity-relationship diagrams) based on system requirements
+- Develop logical data models from given conceptual data models
+- Create/modify/drop tables and columns on databases
+- Insert/update/delete data in tables on databases
+- Retrieve data from a database table
+- Display the results of arithmetic operations in outputs
+- Specify searching conditions to restrict rows in outputs
+- Join multiple tables to retrieve data from the combined table
+
+
+## Course Materials
+#### Canvas
+All materials, quizzes, assignments, and announcements will be distributed through the course page on Canvas. **The course page is optimized for Chrome and may not work properly on other web browsers**
+
+#### Video lecture and slide
+Video lectures and slides will be uploaded weekly on the Canvas course page, along with quizzes and assignments. Refer to the class schedule for details. 
+
+#### Textbook 
+- [HVT] Hoffer, Venkataraman, and Topi. Modern Database Management, 12th Edition, Pearson Prentice Hall (the prior versions – 10 or 11th ed. – are compatible).
+- [JC] Casteel, Oracle 12c: SQL, 3rd Edition, Cengage Learning
+  - This textbook covers the topics for the exams Oracle Database Foundations 1Z0-006 and Oracle Database SQL 1Z0-071, which are the requirement for Oracle Database Foundations Certified Junior Associate and Oracle Database SQL Certified Associate, respectively.
+
+#### DataCamp
+This class is supported by DataCamp, the most intuitive learning platform for data science and analytics. Learn any time, anywhere and become an expert in R, Python, SQL, and more. DataCamp’s learn-by-doing methodology combines short expert videos and hands-on-the-keyboard exercises to help learners retain knowledge. DataCamp offers 350+ courses by expert instructors on topics such as importing data, data visualization, and machine learning. They’re constantly expanding their curriculum to keep up with the latest technology trends and to provide the best learning experience for all skill levels. Join over 6 million learners around the world and close your skills gap.
+
+#### Software/Database platform
+- Oracle Cloud database (instructions provided on the Canvas course page)
+
+#### Online Resources
+- W3C Schools: http://www.w3schools.com/sql/default.asp
+- Oracle Learning Library: http://www.oracle.com/technetwork/tutorials/index.html
+- Codecademy: https://www.codecademy.com/learn/learn-sql
+
+## Evaluation
+### Assignment
+There will be three assignments: conceptual model, database creation, and data extraction. 
+Each assignment accounts for 10% of your final grade. These are individual assignments.
+
+### Quiz
+There will be two types of quizzes: multiple choice question and SQL exercise.
+The multiple choice quizzes is to test students’ knowledge and skills in designing database models and writing SQL queries. You will be given three attempts, and the highest score will be recorded.
+The SQL exercise is to test students' ability to write SQL queries to solve problems. You will be given access to an individual SQL server and a data schema to test your query before submission. Unlike the MCQ quiz, only one attempt will be allowed.
+
+### Exam
+There will be midterm and final exams. The exams are non-cumulative; the final exam won't include topics covered in the midterm exam.
+
+### Class Participation
+Student’s participation will be evaluated based on individual activity reports generated on Canvas, which contain detailed logs of student’s activities on the course page, like whether a student has gone through a particular lecture. It is also strongly encouraged to follow up on the relevant chapters of the textbooks, integral to understanding the full spectrum of the topics covered in the lectures. Any details that might have been left out in the course materials be available in the textbooks. 
+
+### Datacamp exercise (for extra credit)
+You will be given access to "Introduction to Oracle SQL" course on the DataCamp learning platform. Detailed instructions will be provided.
+
+## Grading Policies
+Each unit of work assigned is graded, either by the instructor or the TA. Every effort will be made to complete grading in one week, although schedule conflicts may cause delays sometimes. The final grade for the course will be determined based on the following weights for each item. Students will be given a grade solely based on the stated requirements. There will be no extra-credit assignment in this course. 
+
+--------------------
+Type            %
+-------------  ---- 
+Quiz           36% 
+
+Assignment	   30%  
+
+Final exam     30%
+
+Participation  4%
+
+DataCamp       5%
+
+Total	         105%
+--------------------
+  
+1. A raw total score will be computed for each student in each major performance area. 
+2. An overall score for each student will be calculated by multiplying the raw scores in each area by the grade weights.
+3. Letter grades will be assigned based on each’s standing in the overall distribution of total individual scores within the class (the conversion table below is tentative and subject to change (i.e., curving up or down) depending on the overall class performance).
+4. The lowest passing grade is C.
+
+--------------------------------
+Letter grade 	 Total percentage
+------------- ------------------
+A 	           93 – 100 or above 
+
+A- 	           90 – 92.99 
+
+B+ 	           87 – 89.99 
+
+B 	           83 – 86.99 
+
+B- 	           80 – 82.99 
+
+C+ 	           77 – 79.99 
+
+C 	           73 – 76.99 
+
+F 	           Below 73 
+--------------------------------
+
+### Late submission penalty
+A late submission will be deducted 5% per day.
+
+### Deferring exam
+Deferring exam will only be provided for **extraordinary circumstances** such as accidents, medical surgery, etc. When it happens, the student must contact the instructor **in advance** of the due date and should be able to provide supporting documentation. 
+
+### Appealing Grade
+To appeal to a grade, the student must write a letter explaining your position within seven days after receiving your graded assignment. Document your points with the appropriate course material. After reviewing your explanation, I will either award you additional points or schedule a meeting with you to discuss the disputed issue(s). 
+
+## Lockdown Browser
+This course requires the use of LockDown Browser for taking online exams (midterm and final exams only). The computer used for taking exams must also have a built-in or external webcam. The LockDown Browser software prevents a user from accessing other applications or going to other websites during an exam. The webcam (Respondus Monitor) records you during the exam to ensure you're only using resources that are permitted. Together, these tools make it possible for students to take online exams from any location, and at times that are convenient. It also creates a fair testing environment for everyone in the course. You will need to download and install LockDown Browser ([click here](https://www.respondus.com/lockdown/download.php?id=451214388)) to your computer and use it to take tests (instead of using your normal browser). Note: Do not download a copy of LockDown Browser from elsewhere on the Internet; those versions won't work at our institution.
+Review this list prior to taking your quiz or exam:
+
+* Ensure you are in a location where you won't be interrupted
+* Turn off all mobile devices, phones, etc.
+* Clear your desk of all external materials — books, papers, other computers, or devices
+* No one else should be in the room with you
+*	Remain at your desk or workstation for the duration of the test
+*	Launch the LockDown Browser and choose Canvas from the drop-down menu
+*	Log in using your WSU access ID and password; navigate to your course
+*	Go to your Exam Content area and select the exam
+*	You will then need to review and agree to the Terms of Use for Respondus Monitor
+*	The Webcam Check will confirm that your webcam and microphone are working properly.
+*	The first time the Webcam Check is performed on a computer, Adobe Flash Player will require you to select Allow and Remember.
+*	The remaining steps of the Startup Sequence will depend on settings chosen by your instructor.
+*	Follow the instructions and note your progress along the top of the screen.
+*	If you encounter a problem, select the It’s not working link for troubleshooting tips.
+*	The test will begin after the Startup Sequence is complete.
+*	If an interruption occurs during the exam, briefly explain what happened by speaking directly to your webcam
+*	You cannot exit the exam until all questions are completed and submitted for grading.
+
+Remember that you cannot take the exam using any other Internet browser (Internet Explorer, Firefox, Safari, etc.) besides the LockDown Browser and that you cannot exit the LockDown Browser until the quiz is submitted. Also, remember to save your answers as you go along the quiz. 
+We highly suggest that you use a wired Internet connection as opposed to a wireless one - if your wireless connection drops at all, you will get disconnected from the Canvas server and may have to have it reset by your instructor. Please make sure to do your practice quiz.
+
+## Academic Misconduct
+All acts of academic dishonesty including cheating and plagiarism will be viewed as violations of appropriate student conduct and they will be dealt with following student due process policies in effect. Disciplinary actions will be taken as warranted. An act of academic dishonesty in this course will automatically result in a grade of F on the test or assignment at issue, and possibly for the course itself. Please, give credit where credit is due, specifically and consistently. The appropriate use of technology is expected. Please refer to the material posted on the WSU website regarding academic integrity and acceptable student conduct and appropriate use of technology resources. The following website provides clarification and examples of the behaviors that are prohibited (https://doso.wayne.edu/conduct/academic-misconduct).
+
+Strict compliance with the Wayne State University Academic Integrity policies and the Student Code of Conduct are required in this course. Any cheating (including collaboration among students on quizzes or exams), fabrication, plagiarism, or other academic dishonesty may result in an automatic failing grade for this entire course, irrespective of the specific context or assessment involved (quiz, research paper, exam, etc.). Also, charges may be filed with the Judicial Officer of the Dean of Students Office. For more information, see the Student Code of Conduct brochure. There is zero tolerance for academic dishonesty in this course.
+
+In this regard, please be advised that written assignments, such as essay exam answers, papers, and other submissions, may be submitted to SafeAssign/Uni-check software (or similar software or services) for an evaluation of the originality of your work, for assurance that these assignments contain no plagiarism, and for proper attribution of published sources, and may be included in the restricted databases of providers such as SafeAssign/Uni-check, solely for the purpose of detecting plagiarism. Plagiarism is a form of cheating and, consistent with the University's Student Code of Conduct and our School’s Code of Ethics evidence of plagiarism in written assignments, or evidence of other violations, are grounds for further disciplinary action.
+
+For more information of academic integrity, see the following book:  
+
+* Lipson, C. Doing honest work in college: how to prepare citations, avoid plagiarism, and achieve academic success, Chicago, 2004.
+
+## Student Disabilities Services
+If you have a documented disability that requires accommodations, you will need to register with Student Disability Services for coordination of your academic accommodations. The Student Disability Services (SDS) office is located at 1600 David Adamany Undergraduate Library in the Student Academic Success Services department. The SDS telephone number is 313-577-1851 or 313-202-4216 for videophone use. Once you have your accommodations in place, I will be glad to meet with you privately during my office hours to discuss your special needs. Student Disability Services’ mission is to assist the university in creating an accessible community where students with disabilities have an equal opportunity to fully participate in their educational experience at Wayne State University. You can learn more about the disability office at www.studentdisability.wayne.edu
+To register with Student Disability Services, complete the online registration form at:  https://wayne-accommodate.symplicity.com/public_accommodation/
+
+
+## Schedule
+
+**The midterm and final exams will be during the weekend of the week specified.**
+
+```{r echo=FALSE, message=FALSE}
+df <- read_csv("schedule-7510.csv")
+
+# knitr::kable(df[, 2], escape = F) %>%
+#   kable_styling(bootstrap_options = "striped", font_size = 16) %>% 
+#   pack_rows(index = table(df$Date))
+
+knitr::kable(df, escape = F)
+```

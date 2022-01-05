@@ -10,7 +10,7 @@ always_allow_html: true
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(fontawesome)
-library(kableExtra)
+# library(kableExtra)
 # knitr::read_chunk('global.R')
 ```
 
@@ -24,8 +24,9 @@ df <- tibble(
   c('Instructor', 'Email', 'Office', 'Format'),
   c(paste0('Kyunghee Lee ', icon), 'kyunghee.lee@wayne.edu', 437, 'Online')
 )
-knitr::kable(df, escape = F, col.names=NULL) %>%
-  kable_styling(bootstrap_options = "striped",  font_size = 16)
+# knitr::kable(df, escape = F, col.names=NULL) %>%
+#   kable_styling(bootstrap_options = "striped",  font_size = 16)
+knitr::kable(df, escape = F, col.names=NULL)
 ```
 
 
@@ -58,6 +59,9 @@ Video lectures and slides will be uploaded weekly on the Canvas course page, alo
 - [JC] Casteel, Oracle 12c: SQL, 3rd Edition, Cengage Learning
   - This textbook covers the topics for the exams Oracle Database Foundations 1Z0-006 and Oracle Database SQL 1Z0-071, which are the requirement for Oracle Database Foundations Certified Junior Associate and Oracle Database SQL Certified Associate, respectively.
 
+#### DataCamp
+This class is supported by DataCamp, the most intuitive learning platform for data science and analytics. Learn any time, anywhere and become an expert in R, Python, SQL, and more. DataCamp’s learn-by-doing methodology combines short expert videos and hands-on-the-keyboard exercises to help learners retain knowledge. DataCamp offers 350+ courses by expert instructors on topics such as importing data, data visualization, and machine learning. They’re constantly expanding their curriculum to keep up with the latest technology trends and to provide the best learning experience for all skill levels. Join over 6 million learners around the world and close your skills gap.
+
 #### Software/Database platform
 - Oracle Cloud database (instructions provided on the Canvas course page)
 
@@ -66,10 +70,8 @@ Video lectures and slides will be uploaded weekly on the Canvas course page, alo
 - Oracle Learning Library: http://www.oracle.com/technetwork/tutorials/index.html
 - Codecademy: https://www.codecademy.com/learn/learn-sql
 
-
 ## Evaluation
 ### Assignment
-The assignments are designed to help students go through every major step of database development – from developing conceptual models to implementing a database onto a relational database platform. 
 There will be three assignments: conceptual model, database creation, and data extraction. 
 Each assignment accounts for 10% of your final grade. These are individual assignments.
 
@@ -79,10 +81,13 @@ The multiple choice quizzes is to test students’ knowledge and skills in desig
 The SQL exercise is to test students' ability to write SQL queries to solve problems. You will be given access to an individual SQL server and a data schema to test your query before submission. Unlike the MCQ quiz, only one attempt will be allowed.
 
 ### Exam
-The final exam will include all the topics covered in this course. Stundents will be given access to an individual SQL server to answer the questions.
+There will be midterm and final exams. The exams are non-cumulative; the final exam won't include topics covered in the midterm exam.
 
 ### Class Participation
 Student’s participation will be evaluated based on individual activity reports generated on Canvas, which contain detailed logs of student’s activities on the course page, like whether a student has gone through a particular lecture. It is also strongly encouraged to follow up on the relevant chapters of the textbooks, integral to understanding the full spectrum of the topics covered in the lectures. Any details that might have been left out in the course materials be available in the textbooks. 
+
+### Datacamp exercise (for extra credit)
+You will be given access to "Introduction to Oracle SQL" course on the DataCamp learning platform. Detailed instructions will be provided.
 
 ## Grading Policies
 Each unit of work assigned is graded, either by the instructor or the TA. Every effort will be made to complete grading in one week, although schedule conflicts may cause delays sometimes. The final grade for the course will be determined based on the following weights for each item. Students will be given a grade solely based on the stated requirements. There will be no extra-credit assignment in this course. 
@@ -98,7 +103,9 @@ Final exam     30%
 
 Participation  4%
 
-Total	         100%
+DataCamp       5%
+
+Total	         105%
 --------------------
   
 1. A raw total score will be computed for each student in each major performance area. 
@@ -178,11 +185,14 @@ To register with Student Disability Services, complete the online registration f
 
 ## Schedule
 
+**The midterm and final exams will be during the weekend of the week specified.**
+
 ```{r echo=FALSE, message=FALSE}
-df <- read_csv("schedule.csv")
+df <- read_csv("schedule-5992.csv")
 
-knitr::kable(df[, 2], escape = F) %>%
-  kable_styling(bootstrap_options = "striped", font_size = 16) %>% 
-  pack_rows(index = table(df$Date))
+# knitr::kable(df[, 2], escape = F) %>%
+#   kable_styling(bootstrap_options = "striped", font_size = 16) %>% 
+#   pack_rows(index = table(df$Date))
 
+knitr::kable(df, escape = F)
 ```
