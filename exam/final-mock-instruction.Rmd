@@ -4,7 +4,7 @@ output:
   html_document: 
     theme: cosmo
     includes:
-      after_body: ../misc/lockdown_short_instructions.html
+      after_body: ../misc/lockdown_short_instructions2.html
 ---
 
 ```{r setup, include=FALSE}
