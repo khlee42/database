@@ -1,0 +1,18 @@
+---
+title: ""
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# knitr::read_chunk("../../global.R")
+```
+```{r global, echo=FALSE}
+```
+
+## Lockdown Browser
+  - Follow the instructions provided to properly install Lockdown Browser
+  - Complete the system check prior to taking the exam. It is your responsibility to ensure that your computer is configured correctly.
+  - Please refer to the student code of conduct as well as our syllabus where behavior that constitutes cheating is described.
