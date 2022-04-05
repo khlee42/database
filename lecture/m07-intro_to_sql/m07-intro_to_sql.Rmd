@@ -11,12 +11,12 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 library(fontawesome)
 library(tidyverse)
-library(kableExtra)
+# library(kableExtra)
 ```
 
 # `r fa("youtube", fill = "steelblue")` Video
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/NOilXU51zgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<iframe width="800" height="450" src="https://www.youtube.com/embed/Q0zTkUbQ1Mc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
 <br>
 <iframe width="800" height="450" src="https://www.youtube.com/embed/6VdHXafGgbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
 <br>
@@ -31,9 +31,7 @@ df_slide <- tribble(
   "4-2", "[Retrieving data from database 1](s4-2_retrieving.pdf){target=\"_blank\"}",
   "4-3", "[Retrieving data from database 2](s4-3_retrieving2.pdf){target=\"_blank\"}",
 )
-
-knitr::kable(df_slide, escape = F, col.names=NULL) %>%
-  kable_styling(bootstrap_options = "striped")
+knitr::kable(df_slide, escape = F, col.names=NULL)
 ```
 
 *** Ignore the page 6 to page 13 of the slide 6-1 about SQL Developer app and iSQL*PLUS, which has been depreciated and not used in this course any more.
@@ -46,8 +44,7 @@ df_reading <- tribble(
   "JC", "Ch 1. Overview of database concepts",
   "JC", "Ch 2. Basic SQL SELECT statements",
 )
+knitr::kable(df_reading, escape = F, col.names=NULL) 
 
-knitr::kable(df_reading, escape = F, col.names=NULL) %>%
-  kable_styling(bootstrap_options = "striped")
 ```
 
