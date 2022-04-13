@@ -1,0 +1,31 @@
+---
+title: "Datacamp Exercise"
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(fontawesome)
+```
+
+# `r fa("dumbbell", fill = "steelblue")` Sign-up
+
+- You must sign up using your **@wayne.edu email.**  
+- Either sign up using the invite sent to your WSU email, or
+- Use the **the link below**
+- Click [https://www.datacamp.com/groups/shared_links/5c449c553ed5f2ed013afc9d6de28e860d76fd3784cfbd0a5aab54ecae64f38a](https://www.datacamp.com/groups/shared_links/5c449c553ed5f2ed013afc9d6de28e860d76fd3784cfbd0a5aab54ecae64f38a){target="_blank"} to create your DataCamp account.
+
+# `r fa("tasks", fill = "steelblue")` Check your progress
+When you log in, you will see `My Progress` on the left. This is where you can track the assignments and their due dates.  
+
+```{r echo=FALSE, out.width="70%"}
+knitr::include_graphics("img/dc_my_progress.png")
+```
+
+# `r fa("star", fill = "steelblue")` Extra credit assignment
+
+- Go to https://www.datacamp.com and log in. **You must use the ID/PW created from the above link or invite.**
+- `My_Progress` and click `Introduction to Oracle SQL`
+- You must complete **the entire course** to get the extra credits
