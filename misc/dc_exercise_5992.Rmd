@@ -1,5 +1,5 @@
 ---
-title: "Datacamp Exercise"
+title: "DataCamp Exercise"
 output: 
   html_document: 
     theme: cosmo
@@ -29,3 +29,4 @@ knitr::include_graphics("img/dc_my_progress.png")
 - Go to https://www.datacamp.com and log in. **You must use the ID/PW created from the above link or invite.**
 - `My_Progress` and click `Introduction to Oracle SQL`
 - You must complete **the entire course** to get the extra credits
+- Your progress will be auto-saved on system. You don't need to submit anything on Canvas.
