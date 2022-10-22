@@ -143,7 +143,7 @@ Deferring exam will only be provided for **extraordinary circumstances** such as
 To appeal to a grade, the student must write a letter explaining your position within seven days after receiving your graded assignment. Document your points with the appropriate course material. After reviewing your explanation, I will either award you additional points or schedule a meeting with you to discuss the disputed issue(s). 
 
 ## Lockdown Browser
-This course requires the use of LockDown Browser for taking online exams (midterm and final exams only). The computer used for taking exams must also have a built-in or external webcam. The LockDown Browser software prevents a user from accessing other applications or going to other websites during an exam. The webcam (Respondus Monitor) records you during the exam to ensure you're only using resources that are permitted. Together, these tools make it possible for students to take online exams from any location, and at times that are convenient. It also creates a fair testing environment for everyone in the course. You will need to download and install LockDown Browser ([click here](https://www.respondus.com/lockdown/download.php?id=451214388)) to your computer and use it to take tests (instead of using your normal browser). Note: Do not download a copy of LockDown Browser from elsewhere on the Internet; those versions won't work at our institution.
+This course requires the use of LockDown Browser for taking online exams (midterm and final exams only). The computer used for taking exams must also have a built-in or external webcam. The LockDown Browser software prevents a user from accessing other applications or going to other websites during an exam. You will need to download and install LockDown Browser ([click here](https://www.respondus.com/lockdown/download.php?id=451214388)) to your computer and use it to take tests (instead of using your normal browser). Note: Do not download a copy of LockDown Browser from elsewhere on the Internet; those versions won't work at our institution.
 Review this list prior to taking your quiz or exam:
 
 * Ensure you are in a location where you won't be interrupted
@@ -154,7 +154,6 @@ Review this list prior to taking your quiz or exam:
 *	Launch the LockDown Browser and choose Canvas from the drop-down menu
 *	Log in using your WSU access ID and password; navigate to your course
 *	Go to your Exam Content area and select the exam
-*	You will then need to review and agree to the Terms of Use for Respondus Monitor
 *	The Webcam Check will confirm that your webcam and microphone are working properly.
 *	The first time the Webcam Check is performed on a computer, Adobe Flash Player will require you to select Allow and Remember.
 *	The remaining steps of the Startup Sequence will depend on settings chosen by your instructor.
