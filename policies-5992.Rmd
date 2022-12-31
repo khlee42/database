@@ -29,9 +29,7 @@ df <- tibble(
 knitr::kable(df, escape = F, col.names=NULL)
 ```
 
-
-This is an introductory database course, presuming no prior exposure to database or SQL programming. Student will learn essential knowledge and skills for database management, including database management system (DBMS), database architecture, data design using entity‐relationship (ER) modeling, SQL language, and database administration. 
-Focusing on Oracle relational DBMS, this course makes an extensive use of hands-on exercises. **The access to a laptop/desktop is required in this course.**
+This is an introductory database course designed for students with no or limited prior exposure to databases or SQL programming. Students will learn fundamental concepts and skills in database management, including database management system (DBMS), database architecture, data design using entity‐relationship (ER) modeling, SQL language, and database administration. This course uses Oracle relational DBMS and Oracle SQL. **Access to a computer is required.**
 
 ## Course Objectives
 Upon completion of this course, the student should have acquired the core knowledge and skills to be able to:
@@ -49,7 +47,7 @@ Upon completion of this course, the student should have acquired the core knowle
 
 ## Course Materials
 #### Canvas
-All materials, quizzes, assignments, and announcements will be distributed through the course page on Canvas. **The course page is optimized for Chrome and may not work properly on other web browsers**
+All materials, quizzes, assignments, and announcements will be distributed through the course page on Canvas. **The course page is optimized for Chrome and may not work correctly on other web browsers**
 
 #### Video lecture and slide
 Video lectures and slides will be uploaded weekly on the Canvas course page, along with quizzes and assignments. Refer to the class schedule for details. 
@@ -76,21 +74,18 @@ There will be three assignments: conceptual model, database creation, and data e
 Each assignment accounts for 10% of your final grade. These are individual assignments.
 
 ### Quiz
-There will be two types of quizzes: multiple choice question and SQL exercise.
-The multiple choice quizzes is to test students’ knowledge and skills in designing database models and writing SQL queries. You will be given three attempts, and the highest score will be recorded.
-The SQL exercise is to test students' ability to write SQL queries to solve problems. You will be given access to an individual SQL server and a data schema to test your query before submission. Unlike the MCQ quiz, only one attempt will be allowed.
+There will be two quiz types: multiple-choice questions and SQL exercises.
+The multiple-choice quizzes test students’ knowledge and skills in designing database models and writing SQL queries. You will be given three attempts, and the highest score will be recorded.
+The SQL exercise tests students' ability to write SQL queries to solve problems. You will be given access to an individual SQL server and a data schema to try your query before submission. Unlike the MCQ quiz, only one attempt will be allowed.
 
 ### Exam
 There will be midterm and final exams. The exams are non-cumulative; the final exam won't include topics covered in the midterm exam.
 
-### Class Participation
-Student’s participation will be evaluated based on individual activity reports generated on Canvas, which contain detailed logs of student’s activities on the course page, like whether a student has gone through a particular lecture. It is also strongly encouraged to follow up on the relevant chapters of the textbooks, integral to understanding the full spectrum of the topics covered in the lectures. Any details that might have been left out in the course materials be available in the textbooks. 
-
 ### Datacamp exercise (for extra credit)
-You will be given access to "Introduction to Oracle SQL" course on the DataCamp learning platform. Detailed instructions will be provided.
+You will be given access to the "Introduction to Oracle SQL" course on the DataCamp learning platform. Detailed instructions will be provided.
 
 ## Grading Policies
-Each unit of work assigned is graded, either by the instructor or the TA. Every effort will be made to complete grading in one week, although schedule conflicts may cause delays sometimes. The final grade for the course will be determined based on the following weights for each item. Students will be given a grade solely based on the stated requirements. There will be no extra-credit assignment in this course. 
+Each unit of assigned work is graded either by the instructor or the TA. Every effort will be made to complete grading in one week, although schedule conflicts may cause delays sometimes. The final grade for the course will be determined based on the following weights for each item. Students will be given a grade solely based on the stated requirements. There will be no extra-credit assignment in this course. 
 
 --------------------
 Type            %
@@ -99,13 +94,13 @@ Quiz           36%
 
 Assignment	   30%  
 
-Final exam     30%
+Midterm exam   14%
 
-Participation  4%
+Final exam     20%
 
-DataCamp       5%
+DataCamp       3%
 
-Total	         105%
+Total	         103%
 --------------------
   
 1. A raw total score will be computed for each student in each major performance area. 

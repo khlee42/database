@@ -104,8 +104,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -113,16 +113,9 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -176,7 +169,7 @@ pre code {
 <tbody>
 <tr class="odd">
 <td align="left">Instructor</td>
-<td align="left">Kyunghee Lee <a href="kyunghee.lee@wayne.edu"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg></a></td>
+<td align="left">Kyunghee Lee <a href="kyunghee.lee@wayne.edu"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"></path></svg></a></td>
 </tr>
 <tr class="even">
 <td align="left">Email</td>
@@ -192,7 +185,7 @@ pre code {
 </tr>
 </tbody>
 </table>
-<p>This is an introductory database course, presuming no prior exposure to database or SQL programming. Student will learn essential knowledge and skills for database management, including database management system (DBMS), database architecture, data design using entity‐relationship (ER) modeling, SQL language, and database administration. Focusing on Oracle relational DBMS, this course makes an extensive use of hands-on exercises. <strong>The access to a laptop/desktop is required in this course.</strong></p>
+<p>This is an introductory database course designed for students with no or limited prior exposure to databases or SQL programming. Students will learn fundamental concepts and skills in database management, including database management system (DBMS), database architecture, data design using entity‐relationship (ER) modeling, SQL language, and database administration. This course uses Oracle relational DBMS and Oracle SQL. <strong>Access to a computer is required.</strong></p>
 <div id="course-objectives" class="section level2">
 <h2>Course Objectives</h2>
 <p>Upon completion of this course, the student should have acquired the core knowledge and skills to be able to:</p>
@@ -212,7 +205,7 @@ pre code {
 <h2>Course Materials</h2>
 <div id="canvas" class="section level4">
 <h4>Canvas</h4>
-<p>All materials, quizzes, assignments, and announcements will be distributed through the course page on Canvas. <strong>The course page is optimized for Chrome and may not work properly on other web browsers</strong></p>
+<p>All materials, quizzes, assignments, and announcements will be distributed through the course page on Canvas. <strong>The course page is optimized for Chrome and may not work correctly on other web browsers</strong></p>
 </div>
 <div id="video-lecture-and-slide" class="section level4">
 <h4>Video lecture and slide</h4>
@@ -255,24 +248,20 @@ pre code {
 </div>
 <div id="quiz" class="section level3">
 <h3>Quiz</h3>
-<p>There will be two types of quizzes: multiple choice question and SQL exercise. The multiple choice quizzes is to test students’ knowledge and skills in designing database models and writing SQL queries. You will be given three attempts, and the highest score will be recorded. The SQL exercise is to test students’ ability to write SQL queries to solve problems. You will be given access to an individual SQL server and a data schema to test your query before submission. Unlike the MCQ quiz, only one attempt will be allowed.</p>
+<p>There will be two quiz types: multiple-choice questions and SQL exercises. The multiple-choice quizzes test students’ knowledge and skills in designing database models and writing SQL queries. You will be given three attempts, and the highest score will be recorded. The SQL exercise tests students’ ability to write SQL queries to solve problems. You will be given access to an individual SQL server and a data schema to try your query before submission. Unlike the MCQ quiz, only one attempt will be allowed.</p>
 </div>
 <div id="exam" class="section level3">
 <h3>Exam</h3>
 <p>There will be midterm and final exams. The exams are non-cumulative; the final exam won’t include topics covered in the midterm exam.</p>
 </div>
-<div id="class-participation" class="section level3">
-<h3>Class Participation</h3>
-<p>Student’s participation will be evaluated based on individual activity reports generated on Canvas, which contain detailed logs of student’s activities on the course page, like whether a student has gone through a particular lecture. It is also strongly encouraged to follow up on the relevant chapters of the textbooks, integral to understanding the full spectrum of the topics covered in the lectures. Any details that might have been left out in the course materials be available in the textbooks.</p>
-</div>
 <div id="datacamp-exercise-for-extra-credit" class="section level3">
 <h3>Datacamp exercise (for extra credit)</h3>
-<p>You will be given access to “Introduction to Oracle SQL” course on the DataCamp learning platform. Detailed instructions will be provided.</p>
+<p>You will be given access to the “Introduction to Oracle SQL” course on the DataCamp learning platform. Detailed instructions will be provided.</p>
 </div>
 </div>
 <div id="grading-policies" class="section level2">
 <h2>Grading Policies</h2>
-<p>Each unit of work assigned is graded, either by the instructor or the TA. Every effort will be made to complete grading in one week, although schedule conflicts may cause delays sometimes. The final grade for the course will be determined based on the following weights for each item. Students will be given a grade solely based on the stated requirements. There will be no extra-credit assignment in this course.</p>
+<p>Each unit of assigned work is graded either by the instructor or the TA. Every effort will be made to complete grading in one week, although schedule conflicts may cause delays sometimes. The final grade for the course will be determined based on the following weights for each item. Students will be given a grade solely based on the stated requirements. There will be no extra-credit assignment in this course.</p>
 <table style="width:29%;">
 <colgroup>
 <col width="20%" />
@@ -294,20 +283,20 @@ pre code {
 <td align="center">30%</td>
 </tr>
 <tr class="odd">
-<td align="left">Final exam</td>
-<td align="center">30%</td>
+<td align="left">Midterm exam</td>
+<td align="center">14%</td>
 </tr>
 <tr class="even">
-<td align="left">Participation</td>
-<td align="center">4%</td>
+<td align="left">Final exam</td>
+<td align="center">20%</td>
 </tr>
 <tr class="odd">
 <td align="left">DataCamp</td>
-<td align="center">5%</td>
+<td align="center">3%</td>
 </tr>
 <tr class="even">
 <td align="left">Total</td>
-<td align="center">105%</td>
+<td align="center">103%</td>
 </tr>
 </tbody>
 </table>
@@ -378,7 +367,7 @@ pre code {
 </div>
 <div id="lockdown-browser" class="section level2">
 <h2>Lockdown Browser</h2>
-<p>This course requires the use of LockDown Browser for taking online exams (midterm and final exams only). The computer used for taking exams must also have a built-in or external webcam. The LockDown Browser software prevents a user from accessing other applications or going to other websites during an exam. The webcam (Respondus Monitor) records you during the exam to ensure you’re only using resources that are permitted. Together, these tools make it possible for students to take online exams from any location, and at times that are convenient. It also creates a fair testing environment for everyone in the course. You will need to download and install LockDown Browser (<a href="https://www.respondus.com/lockdown/download.php?id=451214388">click here</a>) to your computer and use it to take tests (instead of using your normal browser). Note: Do not download a copy of LockDown Browser from elsewhere on the Internet; those versions won’t work at our institution. Review this list prior to taking your quiz or exam:</p>
+<p>This course requires the use of LockDown Browser for taking online exams (midterm and final exams only). The computer used for taking exams must also have a built-in or external webcam. The LockDown Browser software prevents a user from accessing other applications or going to other websites during an exam. You will need to download and install LockDown Browser (<a href="https://www.respondus.com/lockdown/download.php?id=451214388">click here</a>) to your computer and use it to take tests (instead of using your normal browser). Note: Do not download a copy of LockDown Browser from elsewhere on the Internet; those versions won’t work at our institution. Review this list prior to taking your quiz or exam:</p>
 <ul>
 <li>Ensure you are in a location where you won’t be interrupted</li>
 <li>Turn off all mobile devices, phones, etc.</li>
@@ -418,10 +407,6 @@ pre code {
 <h2>Schedule</h2>
 <p><strong>The midterm and final exams will be during the weekend of the week specified.</strong></p>
 <table>
-<colgroup>
-<col width="14%" />
-<col width="85%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th align="left">Date</th>
@@ -430,155 +415,155 @@ pre code {
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">2022-08-31</td>
+<td align="left">1/11/23</td>
 <td align="left">Course Introduction</td>
 </tr>
 <tr class="even">
-<td align="left">2022-08-31</td>
+<td align="left">1/11/23</td>
 <td align="left">Lecture 1 - Introduction to Database</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-08-31</td>
+<td align="left">1/11/23</td>
 <td align="left">Quiz 1</td>
 </tr>
 <tr class="even">
-<td align="left">2022-09-07</td>
+<td align="left">1/18/23</td>
 <td align="left">Lecture 2 - Entity-Relatioship Diagram 1</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-09-07</td>
+<td align="left">1/18/23</td>
 <td align="left">Quiz 2</td>
 </tr>
 <tr class="even">
-<td align="left">2022-09-14</td>
+<td align="left">1/25/23</td>
 <td align="left">Lecture 3 - Entity-Relatioship Diagram 2</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-09-14</td>
+<td align="left">1/25/23</td>
 <td align="left">Assignment 1</td>
 </tr>
 <tr class="even">
-<td align="left">2022-09-21</td>
+<td align="left">2/1/23</td>
 <td align="left">Lecture 4 - Enhanced ERD</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-09-21</td>
+<td align="left">2/1/23</td>
 <td align="left">Quiz 3</td>
 </tr>
 <tr class="even">
-<td align="left">2022-09-28</td>
+<td align="left">2/8/23</td>
 <td align="left">Lecture 5 - Relational model</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-09-28</td>
+<td align="left">2/8/23</td>
 <td align="left">Lecture 6 - Normalization</td>
 </tr>
 <tr class="even">
-<td align="left">2022-09-28</td>
+<td align="left">2/8/23</td>
 <td align="left">Quiz 4</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-10-05</td>
+<td align="left">2/15/23</td>
 <td align="left">Lockdown Browser Setup - Midterm</td>
 </tr>
 <tr class="even">
-<td align="left">2022-10-05</td>
+<td align="left">2/15/23</td>
 <td align="left">Midterm exam</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-10-12</td>
+<td align="left">2/22/23</td>
 <td align="left">Lecture 7 - Introduction to SQL</td>
 </tr>
 <tr class="even">
-<td align="left">2022-10-12</td>
+<td align="left">2/22/23</td>
 <td align="left">Quiz 5</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-10-12</td>
+<td align="left">2/22/23</td>
 <td align="left">SDW tutorial 1</td>
 </tr>
 <tr class="even">
-<td align="left">2022-10-12</td>
+<td align="left">2/22/23</td>
 <td align="left">SDW tutorial 2</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-10-12</td>
+<td align="left">2/22/23</td>
 <td align="left">SDW tutorial 3</td>
 </tr>
 <tr class="even">
-<td align="left">2022-10-19</td>
+<td align="left">3/1/23</td>
 <td align="left">Lecture 8 - Filtering output</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-10-19</td>
+<td align="left">3/1/23</td>
 <td align="left">Quiz 6</td>
 </tr>
 <tr class="even">
-<td align="left">2022-10-26</td>
+<td align="left">3/8/23</td>
 <td align="left">Lecture 9 - Data definition and manipulation language (DDL&amp;DML)</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-10-26</td>
+<td align="left">3/8/23</td>
 <td align="left">Quiz 7</td>
 </tr>
 <tr class="even">
-<td align="left">2022-10-26</td>
+<td align="left">3/8/23</td>
 <td align="left">Assignment 2</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-10-26</td>
+<td align="left">3/8/23</td>
 <td align="left">SDW tutorial 4</td>
 </tr>
 <tr class="even">
-<td align="left">2022-11-02</td>
+<td align="left">3/22/23</td>
 <td align="left">Lecture 10 - Joining multiple tables</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-11-02</td>
+<td align="left">3/22/23</td>
 <td align="left">Quiz 8</td>
 </tr>
 <tr class="even">
-<td align="left">2022-11-02</td>
+<td align="left">3/22/23</td>
 <td align="left">Quiz 9</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-11-09</td>
+<td align="left">3/29/23</td>
 <td align="left">Lecture 12 - Group data</td>
 </tr>
 <tr class="even">
-<td align="left">2022-11-09</td>
+<td align="left">3/29/23</td>
 <td align="left">Quiz 10</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-11-09</td>
+<td align="left">3/29/23</td>
 <td align="left">Quiz 11</td>
 </tr>
 <tr class="even">
-<td align="left">2022-11-16</td>
+<td align="left">4/5/23</td>
 <td align="left">Lecture 13 - Subquery</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-11-16</td>
+<td align="left">4/5/23</td>
 <td align="left">Quiz 12</td>
 </tr>
 <tr class="even">
-<td align="left">2022-11-16</td>
+<td align="left">4/5/23</td>
 <td align="left">Assignment 3</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-11-30</td>
+<td align="left">4/12/23</td>
 <td align="left">[Extra credit] DataCamp Exercise</td>
 </tr>
 <tr class="even">
-<td align="left">2022-12-07</td>
+<td align="left">4/19/23</td>
 <td align="left">Lockdown Browser Setup - Final</td>
 </tr>
 <tr class="odd">
-<td align="left">2022-12-07</td>
+<td align="left">4/19/23</td>
 <td align="left">Mock exam for final</td>
 </tr>
 <tr class="even">
-<td align="left">2022-12-14</td>
+<td align="left">4/26/23</td>
 <td align="left">Final exam</td>
 </tr>
 </tbody>

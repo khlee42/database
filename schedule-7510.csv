@@ -1,39 +1,39 @@
 Date,Topics
-2022-08-31,Course Introduction
-2022-08-31,Lecture 1 - Introduction to Database
-2022-08-31,Lecture 2 - Entity-Relatioship Diagram 1
-2022-08-31,Lecture 3 - Entity-Relatioship Diagram 2
-2022-08-31,Quiz 1
-2022-08-31,Quiz 2
-2022-09-07,Lecture 4 - Enhanced ERD
-2022-09-07,Quiz 3
-2022-09-07,Assignment 1
-2022-09-14,Lecture 5 - Relational model
-2022-09-14,Lecture 6 - Normalization
-2022-09-14,Quiz 4
-2022-09-21,Lockdown Browser Setup - Midterm
-2022-09-21,Midterm exam
-2022-09-28,Lecture 7 - Introduction to SQL
-2022-09-28,Quiz 5
-2022-09-28,SDW tutorial 1
-2022-09-28,SDW tutorial 2
-2022-09-28,SDW tutorial 3
-2022-09-28,Lecture 8 - Filtering output
-2022-09-28,Quiz 6
-2022-10-05,Lecture 9 - Data definition and manipulation language (DDL&DML)
-2022-10-05,Quiz 7
-2022-10-05,Assignment 2
-2022-10-05,SDW tutorial 4
-2022-10-12,Lecture 10 - Joining multiple tables
-2022-10-12,Quiz 8
-2022-10-12,Quiz 9
-2022-10-19,Lecture 12 - Group data
-2022-10-19,Quiz 10
-2022-10-19,Quiz 11
-2022-10-19,[Extra credit] DataCamp Exercise
-2022-10-26,Lecture 13 - Subquery
-2022-10-26,Quiz 12
-2022-10-26,Assignment 3
-2022-11-02,Lockdown Browser Setup - Final
-2022-11-02,Mock exam for final
-2022-11-09,Final exam
+2023-02-08,Course Introduction
+2023-02-08,Lecture 1 - Introduction to Database
+2023-02-08,Lecture 2 - Entity-Relatioship Diagram 1
+2023-02-08,Lecture 3 - Entity-Relatioship Diagram 2
+2023-02-08,Quiz 1
+2023-02-08,Quiz 2
+2023-02-15,Lecture 4 - Enhanced ERD
+2023-02-15,Quiz 3
+2023-02-15,Assignment 1
+2023-02-22,Lecture 5 - Relational model
+2023-02-22,Lecture 6 - Normalization
+2023-02-22,Quiz 4
+2023-03-01,Lockdown Browser Setup - Midterm
+2023-03-01,Midterm exam
+2023-03-08,Lecture 7 - Introduction to SQL
+2023-03-08,Quiz 5
+2023-03-08,SDW tutorial 1
+2023-03-08,SDW tutorial 2
+2023-03-08,SDW tutorial 3
+2023-03-08,Lecture 8 - Filtering output
+2023-03-08,Quiz 6
+2023-03-22,Lecture 9 - Data definition and manipulation language (DDL&DML)
+2023-03-22,Quiz 7
+2023-03-22,Assignment 2
+2023-03-22,SDW tutorial 4
+2023-03-29,Lecture 10 - Joining multiple tables
+2023-03-29,Quiz 8
+2023-03-29,Quiz 9
+2023-03-29,[Extra credit] DataCamp Exercise
+2023-04-05,Lecture 12 - Group data
+2023-04-05,Quiz 10
+2023-04-05,Quiz 11
+2023-04-12,Lecture 13 - Subquery
+2023-04-12,Quiz 12
+2023-04-12,Assignment 3 (UPDATE MANUALLY)
+2023-04-19,Lockdown Browser Setup - Final
+2023-04-19,Mock exam for final (UPDATE MANUALLY)
+2023-04-26,Final exam (UPDATE MANUALLY)
