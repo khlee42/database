@@ -15,6 +15,6 @@ library(tidyverse)
 
 # `r fa("youtube", fill = "steelblue")` Video
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/OwUFQPWY3j4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
+<iframe width="800" height="450" src="https://www.youtube.com/embed/uNeyT2omMBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>  
 
 ## See the syllabus for details
