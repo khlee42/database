@@ -15,7 +15,7 @@ library(fontawesome)
 - You must sign up using your **@wayne.edu email.**  
 - Either sign up using the invite sent to your WSU email, or
 - Use the **the link below**
-- Click [https://www.datacamp.com/groups/shared_links/d6cf175afd8d83f298bd4680480ff1748de6ab86cd4afcd45111b62e4d13fdaa](https://www.datacamp.com/groups/shared_links/d6cf175afd8d83f298bd4680480ff1748de6ab86cd4afcd45111b62e4d13fdaa){target="_blank"} to create your DataCamp account.
+- Click [https://www.datacamp.com/groups/shared_links/d3c04ea72e35f2c607c12307d64dc365f1b317c99ead727b34fa877e45285978](https://www.datacamp.com/groups/shared_links/d3c04ea72e35f2c607c12307d64dc365f1b317c99ead727b34fa877e45285978){target="_blank"} to create your DataCamp account.
 
 # `r fa("tasks", fill = "steelblue")` Check your progress
 When you log in, you will see `My Progress` on the left. This is where you can track the assignments and their due dates.  
